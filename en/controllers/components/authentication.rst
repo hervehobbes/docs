@@ -333,6 +333,8 @@ credentials will be rechecked on each request.
     Basic authentication transmits credentials in plain-text. You should use
     HTTPS when using Basic authentication.
 
+.. warning::
+    Even if you don't manage users, you have to create a controler nor the authentication will never run and will drive to an error.
 
 To use basic authentication, you'll need to configure AuthComponent::
 
